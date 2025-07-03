@@ -1,4 +1,56 @@
-html {
+html, body {
   height: 100%;
   width: 100%;
+}
+
+h1{
+  text-align:center;
+}
+
+
+
+.container{
+  width:75%;
+  margin:1rem auto;
+}
+
+.row{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border:solid 10px black;
+  border-radius: 5px;
+  margin:6rem auto;
+  padding:1rem;
+}
+
+.col{
+  width:250px;
+  height:250px;
+  border:solid 10px black;
+  margin:2rem auto;
+}
+
+.grow-box{
+  flex-grow: 4;
+}
+
+.shrink-box{
+  flex-shrink: 4;
+}
+
+#row2{
+  flex-wrap: nowrap;
+}
+
+.stand-alone-box{
+  flex-grow:6;
+  height:auto;
+  align-items: center;
+}
+
+@media (max-width: 650px) {
+  .container, .row, .col{
+    width:100%;
+  }
 }
